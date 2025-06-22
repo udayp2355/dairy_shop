@@ -53,18 +53,18 @@ def signup():
         username = request.form.get('username')
         email = request.form.get('email')
         password = request.form.get('password')
-        confirm_password = request.form.get('confirm_password')
+        confirm_password = request.form.get('confirm_password')  # This field is missing!
         first_name = request.form.get('first_name')
         last_name = request.form.get('last_name')
         phone = request.form.get('phone')
         address = request.form.get('address')
         
         # Validation
-        if not all([username, email, password, confirm_password]):
+        if not all([username, email, password, confirm_password]):  # This check fails
             flash('Please fill in all required fields.', 'error')
             return render_template('signup.html')
         
-        if password != confirm_password:
+        if password != confirm_password:  # This comparison fails
             flash('Passwords do not match.', 'error')
             return render_template('signup.html')
         
