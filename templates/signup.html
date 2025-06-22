@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - KrishnaKath Dairy</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='signup.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>Create an Account</h2>
+        <form method="POST">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+            />
+            <small>Password must be at least 6 characters long</small>
+          </div>
+
+          <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="3"></textarea>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <p>
+          Already have an account?
+          <a href="{{ url_for('auth.login') }}">Login here</a>
+        </p>
+
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %}
+        <ul class="flash-messages">
+          {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %}
+      </div>
+    </div>
+  </body>
+</html>

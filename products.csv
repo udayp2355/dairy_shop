@@ -1,0 +1,13 @@
+id,name,price,description,image,stock
+1,Milk,30,"Fresh, pure dairy milk, rich in essential nutrients like calcium and protein. Ideal for drinking, cooking, or making tea and coffee. Perfect for daily use.",milk.jpg,100
+2,Lassi,40,"A refreshing and traditional sweet yogurt-based drink, flavored with sugar and a hint of cardamom. Loved for its cooling properties, it’s a perfect beverage for hot weather.",lassi.jpg,100
+3,Ghee,300,"Premium clarified butter made from pure milk. Known for its rich aroma and nutty flavor, it is a staple in Indian cooking and sweets. High in healthy fats and ideal for cooking or drizzling over meals.",Ghee.jpg,98
+4,Paneer,150,"Soft and fresh cottage cheese cubes, a versatile protein-rich ingredient used in a variety of Indian dishes like curries, tikkas, and parathas.",Paneer.jpg,100
+5,Shrikhand,120,"A sweet and creamy dessert made from strained yogurt, flavored with saffron, cardamom, and sugar. It’s a festive treat that melts in your mouth.",Shrikhand.JPG,100
+6,Basundi,100,"A luscious and rich dessert made by slow-cooking milk until thickened, sweetened, and flavored with cardamom. A traditional treat often served during festivals.",Basundi.jpg,100
+7,CowGhee,320,"Pure, high-quality ghee made from cow’s milk. Known for its golden color, distinct aroma, and nutritional benefits, it’s ideal for traditional Indian recipes and rituals.",CowGhee.jpg,100
+8,Amrkhand,130,"A fruity twist on traditional shrikhand, infused with the tropical flavor of ripe mangoes. Creamy, sweet, and irresistibly delicious.",Amrkhand.jpg,100
+9,ButterMilk,20,"A light, tangy, and refreshing drink made from curd. Perfect as a digestive aid or a cooling drink during meals.",ButterMilk.jpg,100
+10,Dahi,30,"Thick and creamy homemade curd, made from fresh milk. A rich source of probiotics, ideal for eating plain, pairing with meals, or using in recipes.",dahi.jpg,100
+11,Khawa,200,"Thickened milk solids prepared by boiling milk over a low flame. Used as a base for many Indian sweets like peda, barfi, and gulab jamun.",khawa.jpg,100
+12,Kandhi Peda,150,"A traditional Indian sweet made with khoya, sugar, and flavored with cardamom. Known for its soft texture and rich, milky taste. Perfect for festive occasions or as a treat.",kandhi Peda.jpg,100

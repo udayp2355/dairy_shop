@@ -1,0 +1,239 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+.orders-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.orders-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdfdfd;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.order-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.order-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.order-status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.status-pending-verification {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.order-card-body {
+  padding: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-qty-price {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.item-total {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.order-summary {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.order-summary p {
+  margin: 0.5rem 0;
+}
+
+.order-card-footer {
+  background: #f8f9fa;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.shipping-info {
+  flex: 1;
+}
+
+.shipping-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.shipping-info p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.order-actions {
+  display: flex;
+  align-items: center;
+}
+
+.download-invoice-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.download-invoice-btn:hover {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.download-invoice-btn i {
+  font-size: 1rem;
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .order-actions {
+    align-self: stretch;
+  }
+
+  .download-invoice-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.no-orders {
+  text-align: center;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.no-orders p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
